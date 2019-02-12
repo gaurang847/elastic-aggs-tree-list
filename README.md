@@ -44,6 +44,13 @@ a complex aggregation body object of ^this form, is transformed into a flat arra
 ]
 ```
 2. The `output_interface` is responsible for taking the resultant flat array, i.e. the output of reducer, and displaying it.
+```
+----agg_one
+    |
+    ----agg_two
+    
+----agg_three
+```
 
 NB. The reducer is written using [functional programming paradigm][fp]. Since, it is unavoidable to have a side-effect in the display/output related part of the system, it has been written in a separate file. Thereby, maintaining separation of concerns. 
 
